@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estágio Ribeirão Preto - 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Estágio Ribeirão Preto - 2024 - ALISSON LIMA</h1>
+    
+    <section>
+        <div class="perguntas">
+            <p>1- Observe o trecho de código abaixo:
+
+                int INDICE = 13, SOMA = 0, K = 0;
+                
+                enquanto K < INDICE faça
+                
+                {
+                
+                K = K + 1;
+                
+                SOMA = SOMA + K;
+                
+                }
+                
+                imprimir(SOMA);<br>
+                
+                
+                
+                Ao final do processamento, qual será o valor da variável SOMA?</p>
+                <p id="respostaQ1">Resposta:</p>
+                <button id="q1" onclick="calcularSoma()">Resolver</button>
+        </div>
+
+        <div class="perguntas">
+            <p>2- Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 
+                valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que 
+                desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando 
+                se o número informado pertence ou não a sequência.</p>
+
+                <input type="number" id="numeroQ2" placeholder="Digite um número">
+                <p id="respostaQ2">Resposta:</p>
+                <p id="sequencia"></p>
+                <button id="q2" onclick="q2()">Resolver</button>
+        </div>
+
+        <div class="perguntas">
+            <p>3- Descubra a lógica e complete o próximo elemento:<br>
+                a) 1, 3, 5, 7, <b id="3a">___</b><br>
+                
+                b) 2, 4, 8, 16, 32, 64, <b id="3b">___</b><br>
+                
+                c) 0, 1, 4, 9, 16, 25, 36, <b id="3c">___</b><br>
+                
+                d) 4, 16, 36, 64, <b id="3d">___</b><br>
+                
+                e) 1, 1, 2, 3, 5, 8, <b id="3e">___</b><br>
+                
+                f) 2,10, 12, 16, 17, 18, 19, <b id="3f">___</b><br>
+            </p>
+            <button id="q3" onclick="q3()">Resolver</button>
+        </div>
+
+        <div class="perguntas">
+            <p>4- Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. 
+                Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas 
+                vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada.<br>
+                Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor 
+                controla cada lâmpada? 
+            </p>
+            <button id="q4" onclick="q4()">Resolver</button>
+            <p id="respostaQ4">Resposta: Ligo o interruptor 1, por 20 minutos; Após o tempo, desligo.<br>
+                Ligo o interruptor 2 e deixo ligado.<br>                
+                Vou até a sala da lâmpada 1.<br>                
+                Caso a lâmpada esteja Ligada, é do interruptor 2;<br>
+                Caso esteja apagada e quente, é do interruptor 1;<br>
+                Caso esteja apagada e fria, é do interruptor 3.<br>                
+                Após concluir de qual interruptor é a lâmpada da sala 1, basta ir na sala 2 e verificar novamente as 3 condições.<br>
+                Depois de definir qual é o interruptor da lâmpada da sala 2, automaticamente a lâmpada da sala 3 estará definida.
+                </p>
+        </div>
+
+        <div class="perguntas">
+            <p>5- Escreva um programa que inverta os caracteres de um string.<br>
+
+                IMPORTANTE:<br>
+                
+                a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente 
+                definida no código;<br>
+                
+                b) Evite usar funções prontas, como, por exemplo, reverse;
+            </p>
+            <input type="text" id="textoQ5" placeholder="Digite um Texto.">
+            <p id="respostaQ5">Resultado: </p>
+            <button id="q5" onclick="q5()">Resolver</button>
+            
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: aliceblue;
+}
+
+.perguntas{
+    margin-top: 5rem;
+}
+
+h1{
+    font-family: var(--fonte-primaria);
+}
+
+p {
+    margin: 0.5rem auto;
+    font-family: var(--fonte-secundaria);
+}
+
+button{
+    padding: 0.2rem;
+    margin-top: 0.3rem;
+    font-family: var(--fonte-secundaria);
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+#respostaQ4{
+    visibility: hidden;
+}
